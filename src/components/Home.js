@@ -5,7 +5,6 @@ import gql from 'graphql-tag';
 const Home = ({data: { loading, error, employees }} ) => {
     if (error) return <h1>Error fetching employees</h1>
     if (!loading) {
-        
         return (
             <section>   
                 <ul>
